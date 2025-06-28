@@ -1,0 +1,33 @@
+{
+  "projectName": "blockchain-analytics-server",
+  "serverType": "custom",
+  "requirements": {
+    "purpose": "Analyze blockchain transactions and provide cryptocurrency insights",
+    "tools": [
+      "getWalletBalance",
+      "getTransactionHistory",
+      "analyzeTrends",
+      "calculatePortfolioValue",
+      "getMarketData",
+      "trackWallet",
+      "generateReport"
+    ],
+    "config": {
+      "blockchains": ["ethereum", "bitcoin", "polygon"],
+      "apiProviders": ["etherscan", "coinbase", "coingecko"],
+      "features": {
+        "realTimeUpdates": true,
+        "historicalData": true,
+        "priceAlerts": true,
+        "portfolioTracking": true
+      }
+    },
+    "dependencies": [
+      "ethers",
+      "bitcoinjs-lib",
+      "axios",
+      "ws",
+      "@types/ws"
+    ]
+  }
+}
